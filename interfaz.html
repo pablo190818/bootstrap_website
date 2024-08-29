@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous"/>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="interfaz.css"/>
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Programmeertalen</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ms-auto">
+              <a class="nav-link" href="index.html">Home</a>
+              <a class="nav-link" href="index2.html">Programmeertalen</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    <div class="container my-3">
+        <div class="row">
+             <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 py-4 bg-white">
+                <h2>Programmeertalen Formulier</h2>
+                <form>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Programmeertaal</label>
+                        <input type="text" class="form-control" id="name" placeholder="Programmeertaal" autofocus>
+                      </div>
+                      <div class="mb-3">
+                        <label for="description" class="form-label">Beschrijving</label>
+                        <textarea class="form-control" id="description" placeholder="Programmeertaal Beschrijving" rows="3"></textarea>
+                      </div>
+                      <div class="mb-3">
+                        <label for="programmers" class="form-label">Aantal Programmeurs</label>
+                        <input type="number" class="form-control" id="programmers">
+                      </div>
+                      <div class="d-grid gap-2">
+                          <button class="btn btn-success">Opslaan</button>
+                          <button class="btn btn-secondary">Verwijderen</button>
+                      </div>
+                </form>
+             </div>
+             <div class="col-sm-12 col-md-8 col-lg-8 col-xl-8 py-4 bg-white">
+                <h2>Tabel van Programmeertalen</h2>
+                <table class="table table-dark table-striped">
+                    <thead>
+                        <tr>
+                            <th class="center">#</th>
+                            <th class="center">Programmeertaal</th>
+                            <th class="center">Aantal Programmeurs</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="center">1</td>
+                            <td class="center">JavaScript</td>
+                            <td class="center">21</td>
+                        </tr>
+                        <tr>
+                            <td class="center">2</td>
+                            <td class="center">Python</td>
+                            <td class="center">110</td>
+                        </tr>
+                        <tr>
+                            <td class="center">3</td>
+                            <td class="center">C#</td>
+                            <td class="center">45</td>
+                        </tr>
+                        <tr>
+                            <td class="center">4</td>
+                            <td class="center">Ruby</td>
+                            <td class="center">31</td>
+                        </tr>
+                    </tbody>
+                 </table>
+             </div>
+        </div>
+    </div>
+</body>
+</html>
